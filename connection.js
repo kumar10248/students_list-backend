@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
-const url=process.env.MONGO_URL||"mongodb://localhost:27017/semester";
+require('dotenv').config();
+
+const url=process.env.MONGO_URL||"mongodb://localhost:27017/StudentDB";
 mongoose.connect(url).then(()=>{console.log("Connection Created Successfully")}).catch(error=>console.error(error));
 module.exports=mongoose;
