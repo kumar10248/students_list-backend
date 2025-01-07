@@ -4,7 +4,7 @@ const studentSchema = new mongoose.Schema({
   uid: { type: String },
   section: { type: String },
   group: { type: String },
-  batch: { type: Number },
+  batch: { type: String },
   coursecode: { type: String },
   esubject: { type: String },
   mobileno: { type: Number },
