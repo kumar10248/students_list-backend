@@ -30,7 +30,7 @@ router.get("/section", async (req, res) => {
 });
 router.get("/all", async(req,res)=>{
     try {
-        const student= await Student.find()
+        const student= await Student.find().select('-esubject -email -mobileno -odetails -coursecode')
         res.status(200).json({ student });
     } catch (error) {
       console.log(error);  
