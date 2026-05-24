@@ -11,7 +11,7 @@ require('./connection');
 const studentRoute= require("./Routes/StudentRoute");
 app.get('/',(req,res)=>{
 
-    res.send('Welcome to my server')
+    res.send('Welcome to my Server')
 })
 app.use('/',studentRoute);
 
